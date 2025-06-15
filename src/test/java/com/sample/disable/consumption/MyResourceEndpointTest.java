@@ -47,7 +47,7 @@ class MyResourceEndpointTest {
              final JMSContext context = connectionFactory.createContext(JMSContext.AUTO_ACKNOWLEDGE)) {
             final JMSProducer producer = context.createProducer();
             for (int messageIndex = 0; messageIndex < 10; messageIndex++) {
-                producer.send(context.createQueue("jms.queue.MyQueue"), String.format("should not consumed message %d", messageIndex));
+                producer.send(context.createQueue("jms.queue.MyQueue"), String.format("should not consume message %d", messageIndex));
             }
         }
 
