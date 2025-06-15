@@ -32,7 +32,7 @@
     <dependencies>
         <dependency>
             <groupId>io.quarkiverse.artemis</groupId>
-            <artifactId>quarkus-artemis-jms</artifactId>
+            <artifactId>quarkus-artemis-jms-ra</artifactId>
             <version>3.8.2</version>
         </dependency>
         <dependency>
